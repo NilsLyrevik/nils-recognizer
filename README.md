@@ -10,23 +10,18 @@ The repository supports two modes:
 
 ## Project Structure
 
-.
-├── data/ # Training and validation datasets
-│ ├── train/
-│ │ ├── nils/ # Images of Nils
-│ │ └── not_nils/ # Images of others
-│ └── val/ # Validation split
-├── models/ # Saved models
-├── src/ # Source code
-│ ├── train.py # Training script
-│ └── predict.py # Prediction script
-└── requirements.txt # Python dependencies
-
+- `data/` – training and validation datasets  
+  - `train/nils/` – images of Nils  
+  - `train/not_nils/` – images of others  
+  - `val/nils/` – validation images of Nils  
+  - `val/not_nils/` – validation images of others  
+- `models/` – saved models  
+- `src/` – source code  
+  - `train.py` – training script  
+  - `predict.py` – prediction script  
+- `requirements.txt` – Python dependencies  
 
 ---
-
-## Setup
-
 1. Clone the repository and install dependencies:
    ```bash
    pip install -r requirements.txt
@@ -39,16 +34,7 @@ pip install torch torchvision torchaudio
 
 ## Training
 
-Organize your dataset as follows:
-data/
-├── train/
-│   ├── nils/
-│   └── not_nils/
-└── val/
-    ├── nils/
-    └── not_nils/
-
-Then run:
+Organize your dataset as seen in the project structure
 python src/train.py
 
 ## Prediction
