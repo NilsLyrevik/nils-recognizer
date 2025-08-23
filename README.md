@@ -1,4 +1,4 @@
-# Nils Recognizer
+# Nils Recognizer (CLOSED - DATASET OF MY OWN FACE WAS TO SMALL...)
 
 A simple image recognition project using PyTorch and ResNet18.  
 The repository supports two modes:
